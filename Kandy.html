@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Visit kandy</title>
+    <script src="MyJs.js"> </script>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+        <style>
+            body {
+             margin: 0;
+             font-family: Arial,Helvetica, sans-serif;
+             height:100%;
+            }
+        </style>
+
+</head>
+<body >
+
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+    <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+    </nav>
+
+    <div class="font">
+        <span>0 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+
+</header>
+
+
+<!-- The six columns -->
+
+    <div class="row">
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="Kandy2.jpg" alt="<b>The Temple of the Sacred Tooth Relic</b>
+                <br><p>The Temple of the Sacred Tooth Relic is one of the most important <br>shrines of Sri Lanka.
+                 Also named as Dalada Maligawa, this temple<br> is based in the royal palace of the Kingdom of
+                 Kandy.Housing the legendary<br> Budda tooth, the temple is a World Heritage site though very<br>
+                  little are the remnants of the original temple built around 1600.<br> Amazing ornamentation
+                  with golden fence and extravagant Canadian <br>architecture makes it a blissful sight for
+                  the visitors.<br><br><br></p>" style="width:100%" onmouseover="myFunction(this);">
+                </a>
+                <div class="desc">Dalada Maligawa </div>
+            </div>
+        </div>
+
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="k.jpg" alt="<b>Kandy Lake</b>
+                <br><p>Dominating the town is Kandy Lake. A leisurely stroll around it, with a<br>
+                 few stops on the lakeside seats, is a pleasant way to spend a few hours,<br> although
+                  monoxide-spurting buses careening around the southern<br> edge of the lake can mar
+                  the peace somewhat. The nicest part to walk along<br> is the area around the Temple
+                  of the Sacred Tooth Relic.<br><br><br><br><br></p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Kandy Lake</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="orphanage.jpg" alt="<b>Pinnewala Elephant Orphanage </b>
+            <br><p>A peaceful sanctuary or an exploitative tourist trap? This is the <br>conundrum at
+            the centre of the debate about Sri Lanka's Pinnawala<br> Elephant Orphanage.Tourists who
+            do some research often end up <br>wondering whether they should visit the Pinnawala Elephant
+             Orphanage.<br> Ethical travellers want to support animal welfare projects and see examples
+              <br>of positive change. But can conservation and chains go hand-in-hand?<br> Because this is
+              what you seem to get here.<br><br><br></p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc"> Elephant orphanage  </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="pera.jpg" alt="<b>Perandeniya Botanical Gardens</b>
+            <br><p>The Peradeniya Botanical Garden is one prime tourist attraction<br> of hill country
+            and remains quite flooded with tourists<br> every weekend. One can pack some food to enjoy
+            an open air picnic<br> here or can relish the cafeteria inside serving local and western
+            cuisine.<br><br><br><br><br></p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Perandeniya Botanical Gardens</div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="perahera.jpg" alt="<b>Kandy Esala Perahera</b>
+            <br><p>The Kandy Esala Perahera, one of Sri Lanka’s most famous<br> religious festivals,
+             takes place every year in the hill-capital Kandy,<br> in the full-moon month of Esala
+              coinciding with July/August.<br>Held to seek blessings for a good harvest from the deities,
+               <br>ten days of increasingly frenetic activity culminate in an ancient,<br> awe-inspiring
+                procession that for centuries has drawn religious devotees, <br>and more recently tourists,
+                to Kandy’s narrow hill-streets.<br><br><br><br><br></p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Kandy Perahera </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="dance.jpg" alt="<b>Watch traditional dances</b>
+            <br><p>The sound of drums and conch shells fill the air around the Young Mens<br>
+             Buddhist Association everyday around 6pm or so as the <br>auditorium comes alive
+             with traditional Sri Lankan dances.<br> A performance specially catered towards
+             tourists, Kandyan<br> dances among others are showcased in their most traditional
+             form at times <br>with some modern additions.<br><br><br><br></p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Kandy traditional dances </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container">
+    <span onmouseover="this.parentElement.style.display='none'" class="closebtn"></span>
+    <img id="expandedImg" style="width:550px;height:350px;border-radius:15%; padding:4px" >
+
+    <div id="imgtext"></div>
+</div>
+
+<hr>
+<footer>
+    <div class="footer">
+        <p><strong>Page created by : </strong><a class="cv" href="duneeCV.html">P.H.Duneesha Suloshinie</a></p>
+    </div>
+</footer>
+
+
+</body>
+</html>

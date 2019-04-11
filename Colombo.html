@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Visit Colombo</title>
+    <script src="MyJs.js"> </script>
+    <link rel="stylesheet" href="Mystyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+        <style>
+            body {
+             margin: 0;
+             font-family: Arial,Helvetica, sans-serif;
+             height:100%;
+            }
+        </style>
+
+
+
+</head>
+<body >
+
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+    <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+    </nav>
+
+    <div class="font">
+        <span>0 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+
+</header>
+
+
+
+
+<!-- The six columns -->
+
+    <div class="row">
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="inde.jpg" alt="<b>The Independence Square</b>
+                <br><p>A historical landmark that witnesses the independence celebration of the<br> Sri Lankan
+                 citizens from the British rule, Independence Memorial Hall <br>or Independence Square is a
+                  must visit for every traveler when in Sri Lanka. <br>Located right in the heart of Cinnamon
+                  Gardens, cherish the importance of<br> the Independence Square which is where, a new
+                  beginning of self-rule <br>was embarked upon by the Government of Sri Lanka.<br><br><br>
+                   </p>" style="width:100%" onmouseover="myFunction(this);">
+                </a>
+                <div class="desc">Independence Square</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="casino.jpg" alt="<b>Bally's Casino</b>
+            <br><p>Be it fine dining, accommodation & spa, table games, live betting, <br>
+             or non-stop entertainment, Bally's Casino is the place to be  <br>for those who
+              want to enjoy the best of nightlife in Sri Lanka. <br> From live concerts to DJ nights,
+               play poker through the night at the  <br>one and only Bally's Casino.<br><br><br><br>
+             </p>" style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Bally's Casino </div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="seema.jpg" alt="<b>Seema Malaka</b>
+            <br><p>Ever heard of an island temple? Offering the perfect respite from the<br>hustle
+             and bustle of the city, Seema Malaka is one of the few places<br> to visit in Colombo
+             for couples which exudes tropical charm.<br> Designed by the renowned architect of
+             Sri Lanka:Geoffrey Bawa,<br> Seema Malaka temple strikes a perfect balance between Indian,
+              <br>Chinese, Thai, and Sri Lankanarchitecture, that holds a <br>greater significance in
+               maintaining peace amongst all the cultures.<br><br><br><br>
+           </p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc"> Seema Malaka </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="mos.jpg" alt="<b> Jami Ul-Alfar Mosque</b>
+            <br><p>The first thing that you will notice about the grand mosque of<br>
+            Jami Ul-Alfar is that of its candy-like red and white striped <br>exterior.
+            Designed and constructed by Habibu Labbe Saibu Labbe,<br> Jami Ul-Alfar Mosque
+            stands tall as a witness to the cultural gems<br> of Sri Lanka, and as a perfect
+            amalgamation of four unique styles <br>of architecture – Indian, Gothic, Neo-classical,
+             and Indo-Islamic <br>architecture.<br><br><br><br><br>
+           </p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc"> Jami Ul-Alfar Mosque</div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="bere.jpg" alt="<b>Beira Lake </b>
+                <br><p>Literally located in the heart of Colombo’s city centre, the Beira Lake<br>
+                stretches for about 1 mile and covers a good amount of <br>about 160 acres of surface area.
+                 Once a reservoir and source of<br> transport to trade goods within the country, Beira Lake
+                 <br>today, is one of the most fascinating and best places to visit in <br>Colombo. Serving as a
+                 proud home for more than 140 years to the <br>Colombo rowing club, travelers can very well
+                 indulge in birdwatching,<br> boating, watching romantic sunsets, and more activities at the<br>
+                  Beira Lake, on their next trip to Sri Lanka.<br><br><br><br>
+                </p>" style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Beira Lake</div>
+            </div>
+        </div>
+
+
+        <div class="column">
+            <div class="gallery">
+                <a><img class="a" src="vihara.jpg" alt="<b>Viharamahadevi Park</b>
+            <br><p>Comprising of a park, a zoo, waterfalls, picnic hotspots, walking <br>trails,
+            thrilling rides, and an unruffled statue of Buddha, <br>Viharamahadevi Park is one of
+            the must visit places in Colombo for<br> every traveler. Other than all the aforementioned
+            activities, the<br> park also features a library for travelers to relax and be all by
+            themselves. <br>Treating families, couples, and friends alike, make sure you don't miss
+            <br>out on this one when in Sri Lanka.<br><br><br><br><br><br>
+           </p>"
+                        style="width:100%" onmouseover="myFunction(this);" >
+                </a>
+                <div class="desc">Viharamahadevi Park</div>
+            </div>
+        </div>
+
+    </div>
+
+
+        <div class="container">
+            <span onmouseover="this.parentElement.style.display='none'" class="closebtn"></span>
+            <img id="expandedImg" style="width:550px;height:350px;border-radius:15%; padding:4px" >
+
+            <div id="imgtext"></div>
+        </div>
+
+<hr>
+<footer>
+    <div class="footer">
+        <p><strong>Page created by : </strong><a class="cv" href="duneeCV.html">P.H.Duneesha Suloshinie</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+
+.display {
+	                                             
+	flex: 1;
+	display: flex;
+	flex-direction : column;
+	align-items : center;
+	justify-content : center;
+	background: #001f3f;
+	font-family: tahoma !important;
+	padding-bottom: 0px;
+	
+
+	
+}
+
+.event_title {
+	color: #fff;	
+	text-align: center;
+	font-size: 74px;
+	letter-spacing: 10px;
+}
+p.action_caption{
+	color: #fff;	
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 5px;
+	font-weight: 100;
+}
+#door{
+	text-align: center;
+}
+.call_to_action_button{
+	margin-top: 40px;
+	border-radius: 20px;
+}
+button.call_to_action_button{
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 16px;
+	top: 50%;
+	left: 50%;
+	color: #fff;
+	padding: 20px;
+	width: 0 auto;
+	border-radius: 20px;
+	box-sizing: border-box;
+	background: #0074D9;
+	border-style: none;
+}
+button:hover{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+button:active{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+button:focus{
+	background: #fff;
+	color: #0074D9;
+	font-weight: bold;
+}
+.clock{
+	width: auto;
+
+}
+
+#numbers{
+	width: auto;
+	
+}
+#numbers span{
+	float: center;
+	margin: 0 2.5%;
+	padding: 20px;
+	width: 20%;
+	border-radius: 20px;
+	box-sizing: border-box;
+	color:#EFD0CA;
+	font-size:60px;
+	text-align:center;
+	
+	
+	
+}
+
+#numbers span:nth-child(1){
+  background: #fa5559;
+ 
+}
+
+
+#numbers:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#units span{
+	float: center;
+	width: 25%;
+	text-align:left;
+	margin-top: 30px;
+	color: #ddd;
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+}
+
+span.turn{
+  	animation: turn 0.7s ease forwards;
+}
+
+@keyframes turn{
+	0%{transform: rotateX(0deg)}
+	100%{transform: rotateX(360deg)}
+}
+
+.hide{
+	display: none;
+}
+
+.author{
+	padding-top: 60px;
+	color: #fff;	
+	text-align: center;
+	font-size: 13px;
+	letter-spacing: 2px;
+	font-weight: 100;
+}
+
+
+/* quiz questions */
+
+
+#quiz {
+    margin-left: 10px;
+    background: #d2def2;
+    padding: 10px 20px 10px 20px;
+    width: 400px;
+    border-radius: 20px;
+    float: left;
+	
+	
+
+}
+
+
+.form{
+float:center;
+padding-left:25px;
+width:550px;
+
+}
+
+
+
+input {
+    margin-bottom: 20px;
+    display: block;
+}
+
+
+
+#button {
+    background: green;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    transition-duration: .5s;
+    margin-top: 15px;
+}
+
+#button:hover {
+    background: white;
+    border: 1px solid green;
+    color: black;
+    cursor: pointer;
+
+}
+
+#after_submit {
+    visibility: hidden;
+    background: #ff5459;
+    padding: 10px 20px 10px 20px;
+    width: 550px;
+    border-radius: 20px;
+    float: left;
+    margin-left: 20px;
+    font-size: 17px;
+	padding-right:200px;
+  text-align:justify;
+	
+
+}
+
+
+
+/* .answers{
+ padding-right:200px;
+ text-align:left;
+  
+}
+ */
+
+
+
+#picture {
+    width: 375px;
+    height: 245px;
+	padding:0px 20px 0px 160px;
+}
+
+
+#message{
+	padding:0px 20px 0px 200px;
+}
+
+
+
+#mc {
+    display: inline;
+} 
+
+
+
+
+
+
+
+

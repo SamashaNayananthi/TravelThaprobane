@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <!-- linking the external style sheet and javascript form -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+    <link rel="stylesheet" href="styleAbout.css">
+
+    <!-- internal styling elements -->
+    <style>
+    /* giving special styling to the body */
+    body {
+     margin: 0;
+     background-image:url("Stilt-fishing-885x591.jpg");
+     height:100%;
+     background-size:cover;
+}
+
+ /* styling the pictures in the slideshow */
+ .slides{
+ display:none;
+ width: 1000px;
+ height : 500px;
+ border-radius:50px;
+}
+
+.slidesContainer{
+  padding-top : 15px;
+  padding-bottom:15px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* To center the h1 and h2 elements */
+ h1,h2{
+ text-align: center;
+ }
+
+#text{
+     background-image:url("bl.jpg");
+      background-size:cover;
+    font-family: Papyrus, fantasy;
+    max-width: 1300px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.afk{
+padding: 2px 0px 5px 1050px;
+color:white;
+}
+
+/* to style the mini navigation link */
+.teamStyle{
+list-style-type: none;
+    margin: 20px 1000px 10px 20px;
+    padding: 4px;
+    overflow: hidden;
+    background-color: #211C81;
+    border-radius:20px;
+}
+    </style>
+</head>
+<body>
+
+<!-- navigation bar and the logo -->
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+     <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+     </nav>
+
+    <!-- font size increasing element -->
+    <div class="font">
+        <span>10 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+
+</header>
+
+<div class="teamStyle"><p style="color:white">Link to the bottom of the page : <a style="color:white" href="#team">About us</a></p></div>
+<!-- slide show  -->
+<div class="slidesContainer">
+    <img class="slides" src="sl.jpg" >
+    <img class="slides" src="couple_walk_top_travel_64555_2560x1600.jpg" >
+    <img class="slides" src="galle.jpg" >
+    <img class="slides" src="backgroung image 5.jpg" >
+    <img class="slides" src="pcock.jpg" >
+    <img class="slides" src="20151231131134.jpg" >
+    <img class="slides" src="video-background.jpg" >
+    <img class="slides" src="954460-sri-lanka.jpg" >
+    <img class="slides" src="sigiriya.jpg" >
+    <img class="slides" src="nine-arch-bridge-sri-lanka-train-1024x678.jpg" >
+    <img class="slides" src="istock_521090024.4e3cc142830.original.jpg" >
+    <img class="slides" src="image_1433499060.jpg" >
+    <img class="slides" src="srilankan_experience_ranjith_alwis_image_17.jpg" >
+</div>
+
+<div id="text" class="text">
+    <h2><b>WELCOME TO SRI LANKA</b></h2>
+<h2>Pearl of the Indian Ocean</h2>
+<h2>...Endless beaches...Timeless ruins...Welcoming people...Beauty of the jungles... Rolling surf...Cheap prices...<br>...Fun trains...Famous tea...</h2>
+</div>
+<section id="team" class="team">
+    <div class="container">
+        <div class="row">
+            <h1 class="text">About Us</h1>
+            <p class="text">
+                Our goal is to enhance the attraction of our motherland Sri Lanka to
+                world, we are here to make sure that proper guidance given to you’ll to
+                have an unforgettable journey to Sri Lanka. With guidance given from
+                our site you’ll able to have a safe and comfortable trip to Sri Lanka. We
+                were four colleagues who has good intention in serving you’ll a better
+                service and provide further clarification for any suggestions given.
+            </p>
+
+        </div>
+        <div class="row mgt50px">
+            <div class="column">
+                <div class="imgbox">
+                    <img src="cvPhoto.jpg" width="100px" height="400px">
+                </div>
+                <div class="details">
+                    <h3 class="text">Inuri Ilangakoon<br><span class="text">Student 1 </span></h3>
+                </div>
+            </div>
+
+
+             <div class="column">
+
+                <div class="imgbox">
+                    <img src="Untitled.png" width="100px" height="400px">
+                </div>
+                <div class="details">
+                    <h3 class="text">Samasha Nayananthi<br><span class="text">Student 2 </span></h3>
+                </div>
+            </div>
+
+
+            <div class="column">
+
+                <div class="imgbox">
+                    <img src="afkar.png" width="100px" height="400px">
+                </div>
+                <div class="details">
+                    <h3 class="text">Afkar Fasehudeen<br><span class="text">Student 3 </span></h3>
+                </div>
+            </div>
+
+
+            <div class="column">
+
+                <div class="imgbox">
+                    <img src="duneesha.jpg" width="100px" height="400px">
+                </div>
+                <div class="details">
+                    <h3 class="text">Duneesha Suloshini<br><span class="text">Student 4 </span></h3>
+                </div>
+            </div>
+            <div style="clear : both;"></div>
+        </div>
+
+    </div>
+    <p class="afk"><strong>Design by : </strong><a class="cv" href="AfkCV.html">Afkar Fasehudeen</a></p>
+    <hr>
+    <footer>
+        <div class="footer">
+            <p><strong>Page created by : </strong><a class="cv" href="samCV.html">M.A.Samasha Nayanathi</a></p>
+        </div>
+    </footer>
+</section>
+
+<script>
+    var index = 0; /* give a number to the pictures in the slideshow */
+    slideShow();  /* calling the slideshow function */
+
+    function slideShow(){     /* function to move pictures like a slideshow */
+    var i;
+    var x = document.getElementsByClassName("slides");   /* assigning the pictures to a variable */
+    for (i = 0; i < x.length; i++) {  /* loop to iterate through the images */
+       x[i].style.display = "none";
+    }
+    index++;
+    if (index > x.length) {
+    index = 1
+    }
+    x[index-1].style.display = "block";
+    setTimeout(slideShow, 4000);  /* move the picture after 4 mins */
+    }
+</script>
+
+</body>
+</html>

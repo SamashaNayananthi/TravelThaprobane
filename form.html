@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feed Back</title>
+
+    <!-- linking the external style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+
+    <!-- adding internal styles -->
+<style>
+/* Styling the form */
+    .form{
+    font-family: Papyrus, fantasy;
+    max-width: 500px;
+    margin: auto;
+    background-image:url("Cute_04_A-small-map.jpg");
+    background-size:cover;
+    padding: 10px;
+    border: 2px solid black;
+    }
+
+    .rate{
+    padding-left : 200px /* Adjust the place of the rate div */
+    }
+
+    /* Styling the text area */
+    textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Styling the text boxes */
+.txt {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    outline: none;
+}
+
+/* focus the text box when user trying to input text */
+.txt:focus {
+    border: 3px solid #555;
+}
+
+/* Styling the submit button */
+.submit {
+    width: 25%;
+    background-color: #050400;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- adding the logo and the navigation bar in the header -->
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+    <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+    </nav>
+
+    <!-- adding the font size increasing part -->
+    <div class="font">
+        <span>10 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+</header>
+
+<p> </p>
+<div class="form">
+    <h1><p class="text"><b>Give us you're feed back</b></p> </h1>
+
+    <form class="text" name="form" method="POST">  <!-- as sensitive data are used in the form use the post method -->
+        <b>First name : </b><input type="text" class="txt" name="fname" ><br>
+        <b>Last name  : </b><input type="text" class="txt" name="lname" ><br>
+        <b>E-mail     : </b><input type="email" class="txt" name="mail"><br><br>
+        <textarea name="comment" placeholder="...Enter you're comments here..."></textarea><br>
+        <div class="rate">
+            <h3><b>Rate our site</b></h3>
+            <input type="radio" name="rate" value="best" ><b>Best</b><br>
+            <input type="radio" name="rate" value="good" ><b>Good</b><br>
+            <input type="radio" name="rate" value="bad" ><b>Bad</b><br><br>
+        </div>
+        <input class="submit" type="submit" value="Submit" onclick="popUp(this.form);"><!-- calling the popUp function by onclick the submit button -->
+
+    </form>
+</div>
+
+<script>
+
+/* function to get the radio value that user picked */
+     function radioValue(radioArray){
+       var i;
+       for (i=0;i<radioArray.length;i++){
+         if (radioArray[i].checked){
+           return radioArray[i].value;
+         }
+       }
+       return "";
+     }
+
+/* Validating the user input and giving the alert to the user */
+     function popUp(myForm){
+       var name = myForm.fname.value;
+       var rating = radioValue(myForm.rate);
+       var commentTxt = myForm.comment.value;
+       if (name ==""){      /* giving alert if the first name input is empty */
+       alert("Please enter your name");
+       }
+       else if (rating == ""){      /* giving alert if the rating is empty */
+       alert("Please rate our website");
+       }
+       else if (commentTxt == ""){      /* giving the massege without a comment */
+       confirm("Dear "+name+" thank you very much for your feedback.You have rated our site as "+rating);
+       }
+       else{           /* giving the full summery of the message */
+       confirm("Dear "+name+" thank you very much for your feedback.You have rated our site as "+rating+" and your comment was "+commentTxt);
+       }
+     }
+</script>
+<!-- adding a horizontal line to devide the footer in the website -->
+<hr>
+<footer>
+    <div class="footer">
+        <p><strong>Page created by : </strong><a class="cv" href="samCV.html">M.A.Samasha Nayanathi</a></p>
+    </div>
+</footer>
+</body>
+</html>

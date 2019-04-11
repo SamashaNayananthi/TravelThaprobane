@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+    <link rel="stylesheet" href="GridStyle.css">
+
+</head>
+<body>
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+    <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+    </nav>
+
+    <div class="font">
+        <span>0 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+</header>
+
+
+
+<!.. pull down menu..!>
+
+<script type="text/javascript">
+            function updateTextColour(value) {
+                document.body.style.color = '#' + value;
+            }
+        </script>
+
+
+<div class="duneesha">
+    <select name="backGround" size="1" onChange="updateTextColour(this.value)">
+       <option value=""selected>Change the font color</option>
+        <option value="000000">[Black]</option>
+        <option value="FF0400">[Red]</option>
+        <option value="EFE800">[Yellow]</option>
+        <option value="05EF00">[Green]</option>
+        <option value="0206FF">[Blue]</option>
+        <option value="FFFFFF">[White]</option>
+    </select>
+
+
+
+     <select id= background onchange="myFunction(this.value)">
+        <option value="" selected> Background colour</option>
+        <option value="FFFFFF" > White </option>
+        <option value="05EF00" > Green</option>
+        <option value="000000"> Black </option>
+        <option value="FF4081"> Pink </option>
+        <option value="FDD835"> Yellow </option>
+        <option value="0f4357"> Blue </option>
+        <option value="000000"> Black </option>
+        <option value="B71C1C"> Red</option>
+
+    </select>
+</div>
+
+    <script>
+function myFunction(value) {
+
+document.body.style.backgroundColor ='#' + value ;
+}
+</script>
+
+
+
+
+
+
+<table align="center" >
+    <tr>
+        <th colspan="5" class="text">Wonders in Sri Lanka</th>
+    </tr>
+    <tr>
+        <td colspan="5"> <i><b><p class="text">You can't contol the past , but you can change where you go next</p></b></i> </td>
+    </tr>
+
+    <tr>
+        <td><a href="Anuradhapura.html"> <img  class="gal" src="Anu.jpg" ></a><div class="desc"><p class="text">Anuradhapura</p></div></td>
+
+        <td><a href="Polonnaruwa.html"> <img class="gal" src="polo.jpg" ></a><div class="desc"><p class="text">Polonnaruwa</p></div></td>
+        <td><a href="Sigiriya.html"> <img class="gal" src="Sigiri.jpg" ></a><div class="desc"><p class="text">Sigiriya</p></div></td>
+        <td><a href="Beaches.html"> <img class="gal" src="beach1.jpg" ></a><div class="desc"><p class="text">Beaches</p></div></td>
+
+    </tr>
+
+    <tr>
+        <td><a href="Jaffna.html"> <img class="gal" src="Jf.jpg" ></a><div class="desc"><p class="text">Jaffna</p></div></td>
+        <td><a href="Colombo.html"> <img class="gal" src="colo.jpg" ></a><div class="desc"><p class="text">Colombo</p></div></td>
+        <td><a href="Np.html"> <img class="gal" src="Np3.jpg" ></a><div class="desc"><p class="text">National Parks</p></div></td>
+        <td><a href="Kandy.html"> <img class="gal" src="kandy2.jpg" ></a><div class="desc"><p class="text">Kandy</p></div></td>
+
+    </tr>
+
+
+
+
+</table>
+
+<hr>
+<footer>
+    <div class="footer">
+        <p><strong>Page created by : </strong><a class="cv" href="duneeCV.html">P.H.Duneesha Suloshinie</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

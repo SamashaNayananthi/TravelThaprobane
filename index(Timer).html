@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>                                       
+	<head>                                   
+		<meta charset="UTF-8">
+		<title>Javascript Countdown Clock</title>
+		<link rel="stylesheet" type="text/css" href="main(timer).css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="styleFont.css">
+		<script type="text/javascript" src="font.js"></script>
+	</head>
+	
+	<body>
+	<header>
+		<img src="clr2.png" class="logo"  width="344" height="125" >
+		<nav>
+			<ul>
+				<li><a href="mainPage.html">Home</a> </li>
+				<li><a href="GridPulldown.html">Gallery</a> </li>
+				<li><a href="index(Timer).html">Quiz</a> </li>
+				<li><a href="Products.html">Products</a> </li>
+				<li><a href="Plans.html">Trip Plans</a> </li>
+				<li><a href="SitemapFinal.html">View sitemap</a> </li>
+				<li><a href="index(our team).html">About us</a> </li>
+				<li><a href="form.html">Give Us Feed Back</a></li>
+			</ul>
+		</nav>
+
+		<br><br><br>
+	</header>
+			<div class="display">
+				<div id="clock" class="clock">
+					<h1 class="event_title">QUIZ</h1>
+							<div id="numbers"align="center">
+								<span hspace="20" id="timer"><br></span>
+							</div>
+							
+							<div id="units"align="center">
+									<span><br>Time Left</span><br><br>
+							</div>	
+							
+							
+							
+                   <div class="form">
+
+					<form id="quiz" name="quiz">
+
+						<p class="questions">1.What is the capital of Sri Lanka?</p>
+
+						<input type="radio" id="mc" name="question1" value="Sri Jayawardenepura Kotte"> Sri Jayawardenepura Kotte<br>
+						<input type="radio" id="mc" name="question1" value="Colombo"> Colombo<br>
+
+						<p class="questions">2.who was the first king of Sri Lanka?</p>
+						<input type="radio" id="mc" name="question2" value="King Wijaya">King Wijaya<br>
+						<input type="radio" id="mc" name="question2" value="King Parakkramabahu">King Parakkramabahu<br>
+
+						<p class="questions">3.What is longest river in Sri Lanka?</p>
+
+						<input type="radio" id="mc" name="question3" value="Mahaweli river">Mahaweli river<br>
+						<input type="radio" id="mc" name="question3" value="Kelani river">Kelani river<br>
+						
+						
+						
+						<p class="questions">4.when did SriLanka get the independence?</p>
+
+						<input type="radio" id="mc" name="question4" value="1948">1948<br>
+						<input type="radio" id="mc" name="question4" value="1947">1947<br>
+
+						<p class="questions">5.when did Sri lanka win Cricket World cup?</p>
+						<input type="radio" id="mc" name="question5" value="1996">1996<br>
+						<input type="radio" id="mc" name="question5" value="2015">2015<br>
+
+						<p class="questions">6.what is national sport of Sri lanka?</p>
+
+						<input type="radio" id="mc" name="question6" value="Cricket">Cricket<br>
+						<input type="radio" id="mc" name="question6" value="VolleyBall">VolleyBall<br>
+						
+						
+						
+						
+						<p class="questions">7.what is national bird of Sri lanka?</p>
+
+						<input type="radio" id="mc" name="question7" value="JungleFowl">JungleFowl<br>
+						<input type="radio" id="mc" name="question7" value="Parrot">Parrot<br>
+
+						<p class="questions">8.who was first prime minister of Sri lanka?</p>
+						<input type="radio" id="mc" name="question8" value="DS Senanayaka">DS Senanayaka<br>
+						<input type="radio" id="mc" name="question8" value="Dudley Senanayake">Dudley Senanayake<br>
+
+						<p class="questions">9.Where is  Temple of Tooth is situated in Sri Lanka?</p>
+
+						<input type="radio" id="mc" name="question9" value="Kandy">Kandy<br>
+						<input type="radio" id="mc" name="question9" value="Rathnapura">Rathnapura<br>
+						
+						<p class="questions">10.What is national language of Sri Lanka?</p>
+
+						<input type="radio" id="mc" name="question10" value="Sinhala">Sinhala<br>
+						<input type="radio" id="mc" name="question10" value="English">English<br>
+						
+						
+						<input id="button" type="button" value="Submit" onclick="ask()">
+
+
+					</form>
+					
+					</div>
+
+								
+							
+							
+							
+				</div>
+				
+				<div id="door" class="hide">
+					<h1 class="event_title">ANSWERS</h1>
+					<p class="action_caption">Click the button below to view the results</p>
+					
+				
+					<button class="call_to_action_button" type="button" onclick="check()">view results</button>
+					
+					<p align="center">
+					
+					   <br>	<br><br>
+					   
+					<div id="after_submit">
+						
+						
+						<div class="answers">
+				
+						
+							<p id="q1" class="q1"></p>
+							<p id="q2" class="q2"></p>
+							<p id="q3" class="q3"></p>
+							<p id="q4" class="q4"></p>
+							<p id="q5" class="q5"></p>
+							<p id="q6" class="q6"></p>
+							<p id="q7" class="q7"></p>
+							<p id="q8" class="q8"></p>
+							<p id="q9" class="q9"></p>
+							<p id="q10" class="q10"></p>
+						
+						
+						
+						<p id="number_correct"></p>
+						<p id="timer_set"></p>
+						<p id="message"></p>
+						<img id="picture">
+						
+						</div>
+					</div>
+				</div>
+				
+	</div>
+			<script src="jscode1(timer).js"></script>
+	<hr>
+	<footer>
+		<div class="footer">
+			<p><strong>Page created by : </strong><a class="cv" href="AfkCV.html">Afkar Fasehudeen</a></p>
+		</div>
+	</footer>
+
+	</body>
+</html>

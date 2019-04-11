@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Products</title>
+
+    <link rel="stylesheet" type="text/css" href="ProductStyle.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleFont.css">
+    <script type="text/javascript" src="font.js"></script>
+    <script type="text/javascript" src="product.js"></script>
+
+</head>
+<body>
+
+<header>
+    <img src="clr2.png" class="logo"  width="344" height="125" >
+    <nav>
+        <ul>
+            <li><a href="mainPage.html">Home</a> </li>
+            <li><a href="GridPulldown.html">Gallery</a> </li>
+            <li><a href="index(Timer).html">Quiz</a> </li>
+            <li><a href="Products.html">Products</a> </li>
+            <li><a href="Plans.html">Trip Plans</a> </li>
+            <li><a href="SitemapFinal.html">View sitemap</a> </li>
+            <li><a href="index(our team).html">About us</a> </li>
+            <li><a href="form.html">Give Us Feed Back</a></li>
+        </ul>
+    </nav>
+
+    <div class="font">
+        <span>10 &nbsp;</span>
+        <span><input type="range" onmousemove="incfont();" Id="fontsize" min="10" max="35" style="width:60%;"/></span>
+        <span>&nbsp; 35</span>
+        <label style="display:block;">Font Size :- <span Id="size">20</span></label>
+    </div>
+
+
+
+</header>
+<br>
+<ul class="link">
+    <li><a href="#necklace">Necklaces</a></li>
+    <li><a href="#bags">Hand Bags</a></li>
+    <li><a href="#wall">Wall Hangers</a></li>
+    <li><a href="#form">Form</a></li>
+</ul>
+
+<div class="container">
+<h1 class="text">Online shopping in Sri Lanka</h1>
+    <h2><b><p class="text" id="necklace">Necklaces</p></b></h2>
+<div class="product">
+<img src="necklace_8.jpg" height="300" width="300">
+    <div class="description">
+
+        <p class="text">Pearl Necklace</p>
+        <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+            <input type="text" name="price" class="price" value="32"  disabled>
+        </div>
+    </div>
+    <form class="NoOfItemsForm">
+        <input type="radio" name="pearl" value="Pearl Necklace" class="radioValue" onclick="document.getElementById('item1.1').removeAttribute('disabled')" >
+        No of Items:
+        <input type="number" name="quantity" class="item" id="item1.1" value="0" min="1" max="5" disabled>
+    </form>
+</div>
+<div class="product">
+<img src="necklace_2.jpg" height="300" width="300">
+    <div class="description">
+
+        <p class="text">Agasthi Necklace</p>
+        <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+            <input type="text" name="price" class="price" value="8"  disabled>
+        </div>
+    </div>
+    <form class="NoOfItemsForm">
+        <input type="radio" name="Agasthi" value="Agasthi Necklace" class="radioValue" onclick="document.getElementById('item1.2').removeAttribute('disabled')">
+        No of Items:
+        <input type="number" name="quantity" class="item" id="item1.2" value="0" min="1" max="5" disabled>
+    </form>
+</div>
+<div class="product">
+<img src="necklace_4.jpg" height="300" width="300">
+    <div class="description">
+
+        <p class="text">Elephant pendant</p>
+        <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+            <input type="text" name="price" class="price" value="10"  disabled>
+        </div>
+    </div>
+    <form class="NoOfItemsForm">
+        <input type="radio" name="elephant" value="Necklace with Elephant pendant" class="radioValue" onclick="document.getElementById('item1.3').removeAttribute('disabled')">
+        No of Items:
+        <input type="number" name="quantity" class="item" id="item1.3" value="0" min="1" max="5" disabled>
+    </form>
+</div>
+<div class="product">
+<img src="necklace_7.jpg" height="300" width="300">
+    <div class="description">
+
+        <p class="text">Owl Necklace</p>
+        <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+            <input type="text" name="price" class="price" value="17"  disabled>
+        </div>
+    </div>
+    <form class="NoOfItemsForm">
+        <input type="radio" name="owl" value="Necklace with Owl pendant" class="radioValue" onclick="document.getElementById('item1.4').removeAttribute('disabled')">
+        No of Items:
+        <input type="number" name="quantity" class="item" id="item1.4" value="0" min="1" max="5" disabled>
+    </form>
+
+</div>
+
+
+    <h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p class="text" id="bags">Bags</p></h2>
+    <div class="product">
+        <img src="bag_6.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Straw Bag</p>
+            <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="6"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="straw" value="Straw Bag" class="radioValue" onclick="document.getElementById('item2.1').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item2.1" value="0" min="1" max="5" disabled>
+        </form>
+    </div>
+    <div class="product">
+        <img src="bag_3.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Simple Bag</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="5"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="simple" value="Simple Bag" class="radioValue" onclick="document.getElementById('item2.2').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item2.2" value="0" min="1" max="5" disabled>
+        </form>
+    </div>
+    <div class="product">
+    <img src="bag_4.jpg" height="300" width="300">
+    <div class="description">
+
+        <p class="text">Colourful Bag</p>
+        <div class="amount">
+            <input type="text" name="symbol" class="symbol" value="$"  disabled>
+            <input type="text" name="price" class="price" value="5"  disabled>
+        </div>
+    </div>
+    <form class="NoOfItemsForm">
+        <input type="radio" name="colourful" value="Colourful Bag" class="radioValue" onclick="document.getElementById('item2.3').removeAttribute('disabled')">
+        No of Items:
+        <input type="number" name="quantity" class="item" id="item2.3" value="0" min="1" max="5" disabled>
+    </form>
+    </div>
+    <div class="product">
+        <img src="bag_5.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Elephant Bag</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="4"  disabled>
+            </div>
+            </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="eleBag" value="Elephant Printed Bag" class="radioValue" onclick="document.getElementById('item2.4').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item2.4" value="0" min="1" max="5" disabled>
+        </form>
+    </div>
+
+    <h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><p class="text" id="wall">Wall Hangings</p></h2>
+    <div class="product">
+        <img src="wallHangers_1.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Kandy Perahera</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="16"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="perahera" value="Kandy Perahera Wall Hanger" class="radioValue" onclick="document.getElementById('item3.1').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item3.1" value="0" min="1" max="5" disabled>
+        </form>
+    </div>
+    <div class="product">
+        <img src="wallHangers_4.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Wild Elephants</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="15"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="wildEle" value="Wild Elephants Wall Hanger" class="radioValue" onclick="document.getElementById('item3.2').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item3.2" value="0" min="1" max="5" disabled>
+        </form>
+    </div>
+    <div class="product">
+        <img src="wallHangers_5.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Moonlight Night</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="12"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="night" value="Moonlight Night Wall Hanger" class="radioValue" onclick="document.getElementById('item3.3').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item3.3" value="0"  min="1" max="5" disabled>
+        </form>
+    </div>
+    <div class="product">
+        <img src="wallHangers_7.jpg" height="300" width="300">
+        <div class="description">
+
+            <p class="text">Peacock</p>
+            <div class="amount">
+                <input type="text" name="symbol" class="symbol" value="$"  disabled>
+                <input type="text" name="price" class="price" value="10"  disabled>
+            </div>
+        </div>
+        <form class="NoOfItemsForm">
+            <input type="radio" name="peacock" value="Peacock Wall Hanger" class="radioValue" onclick="document.getElementById('item3.4').removeAttribute('disabled')">
+            No of Items:
+            <input type="number" name="quantity" class="item" id="item3.4" value="0"  min="1" max="5" disabled>
+
+        </form>
+    </div>
+
+    <form name="info" class="submit" onsubmit="return validateForm()" id="form"  method="post">
+        <fieldset>
+            <legend class="text">Personal information:</legend>
+            <b class="text">First name:</b><br>
+            <input type="text" class="formInfo" name="firstname"><br>
+            <b class="text">Last name:</b><br>
+            <input type="text" class="formInfo" name="lastname"><br>
+            <b class="text">Address:</b><br>
+            <input type="text" class="formInfo"  name="address"><br><br>
+        <input type = "submit"  value="Place your order">
+            <input type = "reset" value="Clear Order" onclick="resetOrder()">
+        </fieldset>
+    </form>
+</div>
+<br><br>
+<hr>
+<footer>
+    <div class="footer">
+        <p><strong>Page created by : </strong><a class="cv" href="InuriCV.html">M. Inuri Thilakna Ilangakoon</a></p>
+    </div>
+</footer>
+
+</body>
+</html>

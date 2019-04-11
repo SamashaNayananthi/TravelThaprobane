@@ -1,0 +1,89 @@
+/* main style sheet in the web site */
+
+/* main styling of the body in all pages */
+body {
+     font-family:Arial,Helvetica,sans-serif;
+     background-color:#0f4357;
+}
+
+/* styling the header of the website */
+header{
+     background-image:url("bb.jpg");
+     height:100%;
+     background-size:cover;
+     border-radius:10px;
+    margin:5px 5px 5px 5px;
+     padding-bottom:20px;
+     }
+
+     /* setting the logo in position */
+img.logo {
+    display: inline-block;
+    float:left;
+    padding:20px 30px 10px 60px;
+    width:300px;
+    }
+
+    /* styling the main navigation bar*/
+nav{
+       padding:5px 0px 5px 30px;
+}
+
+h1{
+      font-family:Papyrus, fantasy;
+}
+
+/* navigation bar styling */
+ul{
+    list-style-type: none;
+    margin: 30px 20px 5px 30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #211C81;
+    border-radius:20px;
+}
+
+li{
+ float: left;
+}
+
+
+li a {
+    display: block; /* display the navigation bar list in block */
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* adding the hover effect to the navigation bar */
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+/* styling the footer for the all pages in website */
+footer{
+ float:right;
+ padding:0px 60px 5px 20px;
+}
+
+hr{
+    border-color:black;
+    border-width: 1px;
+}
+
+.footer{
+     width: 350px;
+     text-align:center;
+     padding: 5px;
+     margin: 0;
+     color:white;
+}
+
+.cv{
+color:#D3F13B;
+}

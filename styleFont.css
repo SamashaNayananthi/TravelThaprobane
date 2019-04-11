@@ -1,0 +1,13 @@
+.font{
+        width: 20%;
+        height: 50px;
+       background-color: #211C81;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 20px;
+        border-radius: 10px;
+        position: right;
+        margin: auto;
+
+        }
